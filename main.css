@@ -1,0 +1,215 @@
+.navbar {
+  height: 115px;
+  width: 100%;
+  background-color: #fde7f1;
+  padding: 0 10px;
+}
+
+.custom-navbar {
+  display: flex;
+  align-items: center;
+  width: 99%;
+  padding: 0 10px;
+}
+
+.custom-navbar .brand img {
+  height: 20px;
+}
+
+.custom-navbar .search-bar {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.custom-navbar .search-bar input[type="text"] {
+  width: 40%;
+  height: 50px;
+  padding: 0 0 0 30px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.custom-navbar .buttons button {
+  margin-left: 5px;
+  height: 20px;
+  padding: 0 5px;
+}
+
+.search-btn-bar {
+  padding: 0px 25px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background: white;
+  color: #643643;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.nav-btn-kanan {
+  margin: 0px 5px;
+  color: #643643;
+  font-size: 30px;
+}
+
+.nav-btn-kanan:hover {
+  color: black;
+}
+
+.navbar-space {
+  height: 13%;
+}
+
+.photo-container {
+  height: 250px;
+  margin-top: 70px; /* Adjust based on the height of your navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-row {
+  max-width: 99%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.photo-row .left-photo,
+.photo-row .right-photos {
+  height: 100%;
+}
+
+.photo-row .right-photos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.photo-row img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 8px;
+}
+
+.photo-row .top-photo,
+.photo-row .bottom-photo {
+  height: calc(50% - 2.5px); /* Adjusting for margin between photos */
+}
+
+.photo-row .top-photo {
+  margin-bottom: 5px; /* Adjust the margin as needed */
+}
+
+.vertical-navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100px; /* Adjust the width as needed */
+  height: 430px;
+  background-color: #fde7f2; /* Adjust the background color as needed */
+  border-top-right-radius: 10px;
+  padding-top: 10px;
+}
+
+.vertical-navbar .nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  color: #000;
+  text-decoration: none;
+}
+
+.vertical-navbar .nav-link img {
+  width: 60px; /* Adjust the icon size as needed */
+  height: 60px; /* Adjust the icon size as needed */
+  border-radius: 10px;
+}
+
+.vertical-navbar .nav-link span {
+  font-size: 15px; /* Adjust the text size as needed */
+  color: #737373;
+}
+
+/*  */
+
+.card-container {
+  margin-top: 5%;
+}
+
+.product-card {
+  width: 250px; /* Adjust the width as needed */
+  cursor: pointer;
+  margin-bottom: 50px;
+  color: black;
+}
+
+.product-card img {
+  width: 100%;
+  height: 250px; /* Adjust the height as needed */
+  object-fit: cover;
+}
+
+.product-card .card-body {
+  padding: 10px;
+}
+
+.product-card .card-title {
+  font-size: 1.1rem; /* Adjust the font size as needed */
+  margin-bottom: 10px;
+  color: black;
+}
+
+.product-card .card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; /* Adjust the padding as needed */
+  background-color: #fff; /* Match the background to the card */
+  border-top: none; /* Optional: add a top border */
+}
+
+.product-card .price {
+  font-size: 1.1rem; /* Adjust the font size as needed */
+  color: #ff5ba1; /* Adjust the color as needed */
+}
+
+.product-card .sold {
+  font-size: 0.9rem; /* Adjust the font size as needed */
+  color: #6c757d; /* Adjust the color as needed */
+}
+
+.cant-found-text {
+  display: none;
+}
+
+.fav-card img {
+  width: 100%;
+  height: 50px; /* Adjust the height as needed */
+  object-fit: cover;
+}
+
+/* Untuk layar lebar 1194px atau lebih besar */
+@media (max-width: 1194px) {
+  .product-card {
+    width: 220px;
+  }
+}
+@media (max-width: 988px) {
+  .product-card {
+    width: 170px;
+  }
+}
+@media (max-width: 808px) {
+  .product-card {
+    width: 170px;
+  }
+  .vertical-navbar {
+    display: none;
+  }
+}
